@@ -1,0 +1,9 @@
+const today = new Date();
+const christmas = new Date(today.getFullYear(), 11, 25);
+const oneDay = 24 * 60 * 60 * 1000; // 1 day in milliseconds
+
+// Calculate the days left until Christmas
+const daysLeft = Math.ceil((christmas - today) / oneDay);
+
+console.log(`${daysLeft} days left until Christmas!`);
+
